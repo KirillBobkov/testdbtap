@@ -1,0 +1,58 @@
+:root {
+	--font-main: 'Open Sans', sans-serif;
+	--font-main-semibold: 'Open Sans Semibold', sans-serif;
+	--font-main-bold: 'Open Sans Bold', sans-serif;
+
+	--font-editor: 'IBM Plex Mono', monospace;
+	--font-editor-semibold: 'IBM Plex Mono SemiBold', monospace;
+	--font-editor-bold: 'IBM Plex Mono Bold', monospace;
+
+	--font-size-s: 10px;
+	--font-size-m: 12px;
+	--font-size-l: 14px;
+	--font-size-xl: 16px;
+
+	--line-height-m: 1.3333333;
+	--line-height-l: 1.6666666;
+	--line-height-xl: 2;
+
+	--line-height-s-px: 14px;
+	--line-height-m-px: 16px;
+	--line-height-l-px: 20px;
+	--line-height-xl-px: 24px;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/OpenSans-Regular.ttf'), url('../fonts/OpenSans-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Semibold';
+	src: url('../fonts/OpenSans-SemiBold.ttf'), url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('../fonts/OpenSans-Bold.ttf'), url('../fonts/OpenSans-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IBM Plex Mono SemiBold';
+	src: url('../fonts/IBMPlexMono-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IBM Plex Mono Bold';
+	src: url('../fonts/IBMPlexMono-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}

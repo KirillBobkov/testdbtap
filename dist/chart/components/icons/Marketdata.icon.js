@@ -1,0 +1,12 @@
+// @ts-nocheck
+import React, { memo, useContext } from 'react';
+import { IconsRenderContext } from '../multi-chart/icons-render-context';
+export const MarketdataIcon = memo(({ label }) => {
+    const { svgShapeRendering } = useContext(IconsRenderContext);
+    return (React.createElement("span", { "data-icon-name": label },
+        React.createElement("svg", { "aria-hidden": "true", width: "20", height: "20", viewBox: "0 0 20 20", fill: "none", xmlns: "http://www.w3.org/2000/svg" },
+            React.createElement("path", { shapeRendering: svgShapeRendering, d: "M14.5959 6.82262C14.4486 6.96954 14.2719 7.04509 14.0656 7.04929C13.8678 7.05349 13.6932 6.98003 13.5416 6.82892C13.3901 6.6778 13.3144 6.49941 13.3144 6.29372C13.3144 6.09224 13.3901 5.91594 13.5416 5.76483C13.6932 5.60952 13.8678 5.53186 14.0656 5.53186C14.2719 5.53186 14.4486 5.60742 14.5959 5.75853C14.7432 5.90964 14.8169 6.08804 14.8169 6.29372C14.8169 6.49941 14.7432 6.67571 14.5959 6.82262Z", fill: "currentColor" }),
+            React.createElement("path", { shapeRendering: svgShapeRendering, d: "M14.5959 10.2038C14.4486 10.3507 14.2719 10.4263 14.0656 10.4305C13.8678 10.4347 13.6932 10.3612 13.5416 10.2101C13.3901 10.059 13.3144 9.88267 13.3144 9.68119C13.3144 9.4797 13.3901 9.3034 13.5416 9.15229C13.6932 8.99698 13.8678 8.91932 14.0656 8.91932C14.2719 8.91932 14.4486 8.99488 14.5959 9.14599C14.7432 9.2971 14.8169 9.4755 14.8169 9.68119C14.8169 9.88267 14.7432 10.0569 14.5959 10.2038Z", fill: "currentColor" }),
+            React.createElement("path", { shapeRendering: svgShapeRendering, d: "M14.5959 13.5912C14.4486 13.7382 14.2719 13.8137 14.0656 13.8179C13.8678 13.8221 13.6932 13.7487 13.5416 13.5975C13.3901 13.4464 13.3144 13.2701 13.3144 13.0686C13.3144 12.863 13.3901 12.6846 13.5416 12.5335C13.6932 12.3823 13.8678 12.3068 14.0656 12.3068C14.2719 12.3068 14.4486 12.3823 14.5959 12.5335C14.7432 12.6846 14.8169 12.863 14.8169 13.0686C14.8169 13.2701 14.7432 13.4443 14.5959 13.5912Z", fill: "currentColor" }),
+            React.createElement("path", { shapeRendering: svgShapeRendering, fillRule: "evenodd", clipRule: "evenodd", d: "M2.5 5C2.5 4.30964 3.05964 3.75 3.75 3.75H16.25C16.9404 3.75 17.5 4.30964 17.5 5V14.375C17.5 15.0654 16.9404 15.625 16.25 15.625H3.75C3.05964 15.625 2.5 15.0654 2.5 14.375V5ZM3.75 5H16.25V7.43337H3.75L3.75 5ZM3.75 8.55413V10.8271H16.25V8.55413H3.75ZM16.25 11.9479H3.75L3.75 14.375H16.25V11.9479Z", fill: "currentColor" }))));
+});

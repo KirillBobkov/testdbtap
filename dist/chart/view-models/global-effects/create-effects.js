@@ -1,0 +1,12 @@
+import { context } from '../../../context/context2';
+import { keepSameTimestampRangeOnAggregationEffect } from './keep-same-timestamp-range-aggregation.effect';
+import { separateVolumesOnHistogramEffect } from './separate-volumes-on-histogram.effect';
+import { merge } from 'rxjs';
+import { handleRangesBarTypeEffect } from './handle-ranges-bar-type.effect';
+import { keepSameTimestampRangeOnInstrumentEffect } from './keep-same-timestamp-range-instrument.effect';
+import { notifyDrawingsLimitIsReachedEffect } from './notify-drawings-limit-is-reached';
+import { handleDblClickOnChartEffect } from './handle-dbl-click.effect';
+import { saveXScaleEffect } from './save-x-scale.effect';
+import { doBasicScaleEffect } from './do-basic-scale.effect';
+import { keepSameTimestampRangeOnDataEffect } from './keep-same-timestamp-range-data.effect';
+export const CreateEffects = context.combine(handleRangesBarTypeEffect, separateVolumesOnHistogramEffect, keepSameTimestampRangeOnAggregationEffect, keepSameTimestampRangeOnInstrumentEffect, notifyDrawingsLimitIsReachedEffect, handleDblClickOnChartEffect, saveXScaleEffect, keepSameTimestampRangeOnDataEffect, doBasicScaleEffect, (handleRangesBarTypeEffect, separateVolumesOnHistogramEffect, keepSameTimestampRangeEffect, keepSameTimestampRangeOnInstrumentEffect, notifyDrawingsLimitIsReachedEffect, handleDblClickOnChartEffect, saveXScaleEffect, keepSameTimestampRangeOnDataEffect, doBasicScaleEffect) => merge(handleRangesBarTypeEffect, separateVolumesOnHistogramEffect, keepSameTimestampRangeEffect, keepSameTimestampRangeOnInstrumentEffect, notifyDrawingsLimitIsReachedEffect, handleDblClickOnChartEffect, saveXScaleEffect, keepSameTimestampRangeOnDataEffect, doBasicScaleEffect));

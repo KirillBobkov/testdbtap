@@ -1,0 +1,10 @@
+import { Chart } from '@devexperts/dxcharts-lite/dist';
+import { attachDrawingsComponent } from '@dx-private/dxchart5-modules/dist/drawings/index';
+import { attachEquivolumeComponent } from '@dx-private/dxchart5-modules/dist/equivolume/index';
+import { attachHeikinAshiComponent } from '@dx-private/dxchart5-modules/dist/heikin-ashi/index';
+import { attachVolumeLabel } from '@dx-private/dxchart5-modules/dist/volume-label/index';
+import { attachNewsComponent } from '@dx-private/dxchart5-modules/dist/news/index';
+import { attachStudiesComponent } from '@dx-private/dxchart5-modules/dist/studies/index';
+import { attachExecutedOrdersComponent } from '@dx-private/dxchart5-modules/dist/executed-orders/index';
+import { pipe } from 'fp-ts/function';
+export const createChartWithModules = (element, userConfig = {}) => pipe(new Chart(element, userConfig), attachDrawingsComponent, attachStudiesComponent, attachEquivolumeComponent, attachHeikinAshiComponent, attachNewsComponent, attachExecutedOrdersComponent, attachVolumeLabel);

@@ -1,0 +1,3 @@
+/// <reference types="react" />
+import { ChartConfiguratorViewModel } from '../../view-models/chart-configurator.view-model';
+export declare const LegendMenuContainer: import("../../../context/context2").Context<Record<"chart", import("../../components/canvas-chart-renderer/chart-with-modules").ChartWithModules> & Record<"chartLegendVM", import("../../view-models/chart-legend/chart-legend.view-model").ChartLegendViewModel> & Record<"chartConfiguratorViewModel", ChartConfiguratorViewModel>, () => import("react").FunctionComponentElement<import("../../components/chart-legend/chart-legend-menu.component").LegendMenuProps>>;
